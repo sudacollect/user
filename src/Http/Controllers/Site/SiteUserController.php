@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\DB;
 
 use Gtd\Extension\User\Http\Controllers\SiteController;
 use Gtd\Extension\User\Models\User;
+use Gtd\Extension\User\Models\UserType;
 use Gtd\Extension\User\Notifications\ChangeEmailNotify;
 
 use Gtd\Suda\Models\Media;
