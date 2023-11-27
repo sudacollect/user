@@ -1,0 +1,31 @@
+{
+  "name": "gtdxyz/user",
+  "type": "suda-extension",
+  "description": "suda user extension",
+  "keywords": ["laravel", "suda", "gtd"],
+  "homepage": "https://github.com/sudacollect/user.git",
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "gtdxyz/suda": "^10.0 || dev-main"
+  },
+  "autoload": {
+    "files": [
+        "src/SudaUser.php",
+        "src/Helpers.php"
+    ],
+    "psr-4": {
+        "Gtd\\Extension\\User\\": "src/"
+    }
+  },
+  "extra": {
+      "laravel": {
+        "providers": [
+            "Gtd\\Extension\\User\\UserServiceProvider"
+        ],
+          "aliases": {
+              "ExtUser": "Gtd\\Extension\\User"
+          }
+      }
+  }
+}
